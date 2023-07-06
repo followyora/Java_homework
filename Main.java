@@ -31,7 +31,7 @@ public class Main {
 
         int i = 345;
         int hundred = i / 100; // Отделяем первое число
-        int dozens = i / 100 / 10;// Отделяем второе число
+        int dozens = i % 100 / 10;// Отделяем второе число
         int units = i % 10; // Отделяем третье число
 
         System.out.println("Число " + i + " -> " + hundred + "," + dozens + "," + units + ".");
